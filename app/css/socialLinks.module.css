@@ -1,0 +1,86 @@
+.Left_Links{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: var(--light-slate);
+}
+.Links_content{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.Links_content::after {
+    content: "";
+    display: block;
+    width: .5px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+}
+.Links_a{
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    padding: 10px;
+    font-size: 1.3rem;
+    position: relative;
+    transition: var(--transition);
+}
+.Links_a:is(:hover, :focus){
+    color: var(--green);
+    transform: translateY(-3px);
+}
+.mail_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    position: relative;
+}
+.mail_content::after {
+    content: "";
+    display: block;
+    width: .5px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+}
+.Right_Links{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: var(--light-slate);
+}
+.mail_a{
+    margin: 20px auto;
+    padding: 10px;
+    font-size: .9rem;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    transition: var(--transition);
+    writing-mode: vertical-rl;
+}
+.mail_a:is(:hover, :focus){
+    color: var(--green);
+    transform: translateY(-3px);
+}
+@media only screen and (max-width: 580px) {
+    .Right_Links, .Left_Links{
+        display: none;
+    }
+}

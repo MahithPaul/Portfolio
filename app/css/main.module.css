@@ -1,0 +1,22 @@
+.bg{
+    background: #0F172A;
+}
+.main{
+    padding: 0px 150px;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    height: auto;
+}
+@media only screen and (max-width: 786px) {
+    .main{
+        padding: 0px 100px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main{
+        padding: 0px 45px;
+    }
+}

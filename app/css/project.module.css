@@ -1,0 +1,212 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    padding-top: 10rem;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 3px;
+}
+
+.section_title {
+    background: #FDC830;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub_title {
+    margin-top: 1rem;
+    font-size: .6rem;
+    color: var(--light-slate);
+}
+
+.tab__main {
+    margin-top: 15px;
+    display: block;
+}
+
+.tab_card {
+    display: flex;
+    justify-content: flex-end;
+    gap: 70px;
+    flex: 1;
+    flex-basis: 100px;
+}
+
+.tab_card_item {
+    position: relative;
+    min-width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    font-size: .9rem;
+    list-style: none;
+    padding: 1rem;
+    background-color: #060E20;
+    margin: 25px 0;
+    color: #fff;
+}
+
+.tab_card_item:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 253, 232, 0.19) 0px 5px 15px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.tab_card_item span {
+    font-size: .7rem;
+    margin-left: 10px;
+    color: var(--light-slate);
+}
+
+.tab_active {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.tab_active::after {
+    background-color: rgb(0, 199, 229);
+    border-radius: 0.3rem 0px 0px 0.3rem;
+    bottom: 0px;
+    content: "";
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 0.5rem;
+}
+
+.tab_card_item_right {
+    position: relative;
+}
+
+/* */
+.code_active {
+    display: block !important;
+}
+
+.code_card {
+    border: 1px solid #282C34;
+    border-radius: 6px;
+    background: #3a404d;
+    display: none;
+    margin: 0 auto;
+    margin-top: 1rem;
+    position: absolute;
+    /* right: 200px; */
+}
+
+.code_card_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px 0px;
+    border-radius: 6px 6px 0 0;
+    background-color: #363c42;
+}
+
+.code_card_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.code_card_round {
+    display: flex;
+    gap: 5px;
+}
+
+.round1 {
+    background-color: #FF5F57;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.round2 {
+    background-color: #FEBC2E;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.round3 {
+    background-color: #28C840;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.code_card_tab {
+    margin-top: 2px;
+    padding: 6px 10px 5px 10px;
+    background-color: #282D37;
+    color: var(--light);
+    border-radius: 3px 3px 0 0;
+    font-size: .7rem;
+}
+
+.play {
+    background: #282C34;
+    width: 230px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* .tab_card_list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }  */
+        .tab_card {
+            gap: 0;
+            flex-direction: column;
+        }
+        .tab__main {
+            width: 100%;
+            height: 170vh;
+        }
+        .tab_card_left{
+            align-self: center;
+            display: flex;
+            align-items: center;
+        }
+        .code_card {
+            align-self: center;
+            width: calc(70% - 10px);
+        }
+}
+
+@media only screen and (max-width: 480px) {
+    .tab_card {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .tab__main {
+        height: 160vh;
+    }
+
+    .code_card {
+        width: calc(80% - 10px);
+    }
+
+    .tab_card_left {
+        align-items: center;
+        display: flex;
+    }
+}

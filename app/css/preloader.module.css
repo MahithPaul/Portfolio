@@ -1,0 +1,38 @@
+/* 0C1622 */
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--pre-bg);
+}
+
+.h2 {
+    position: relative;
+    font-size: 2rem;
+    color: var(--pre-bg);
+    -webkit-text-stroke: 0.1vw #464646;
+}
+.h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: var(--secondary-color);
+    -webkit-text-stroke: 0vw #313438;
+    border-right: 2px solid var(--secondary-color);
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%,10%,100%
+    {
+        width: 0%;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
