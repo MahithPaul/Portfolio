@@ -30,7 +30,7 @@ function page() {
     <div>
       <section id="exp" className={style.container}>
         <div className={style.css_123}>
-          <a href="http://localhost:3000/#exp" className={style.back}>
+          <a href="/#exp" className={style.back}>
             <Icon icon="ep:back" />
           </a>
           <div className={style.title}>

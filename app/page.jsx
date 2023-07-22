@@ -24,9 +24,9 @@ function Home() {
   }, []);
   return (
     <div>
-      {loading ? (
+      {/* {loading ? (
         <Preloader />
-      ) : (
+      ) : ( */}
         <>
           <div className={style.bg}>
             {/* <RadialGradient/> */}
@@ -43,7 +43,7 @@ function Home() {
             </div>
           </div>
         </>
-      )}
+      {/* )} */}
     </div>
   );
 }
