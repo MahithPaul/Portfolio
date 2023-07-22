@@ -10,25 +10,25 @@ function Experience() {
       image: "/logo.jpeg",
       title: "P Lakshmana Rao & Co",
       date: "Nov 2022 - Jan 2023",
-      link: "http://localhost:3000/work/PLakshmanaRao&Co",
+      link: "/work/PLakshmanaRao&Co",
     },
     {
       image: "/svs.png",
       title: "Simulated Virtual Solutions Pvt Ltd",
       date: "Apr 2022 - Set 2022",
-      link: "http://localhost:3000/work/SimulatedVirtualSolutionsPvtLtd",
+      link: "/work/SimulatedVirtualSolutionsPvtLtd",
     },
     {
       image: "/codeclause.png",
       title: "CodeClause",
       date: "Apr 2023 - May 2023",
-      link: "http://localhost:3000/work/CodeClause",
+      link: "/work/CodeClause",
     },
     {
       image: "/codegnan.jpg",
       title: "Codegnan",
       date: "May 2023 - July 2023",
-      link: "http://localhost:3000/work/Codegnan",
+      link: "/work/Codegnan",
     },
   ]);
   return (
